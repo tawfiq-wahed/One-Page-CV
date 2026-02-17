@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #25a6f7c0;
+  --text-color: #bdbdbd;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: Inter, sans-serif;
+  background: #111;
+  color: white;
+}
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 5rem;
+  background: #1a1a1a;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.profile {
+  grid-column: 1 / -1;
+}
+.group-1,
+.group-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.group-3 {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 4rem;
+}
+
+.profile_container {
+  display: flex;
+  gap: 2rem;
+}
+
+.profile_profileImg {
+  max-width: 200px;
+}
+
+.profile_profileImg img {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid #333;
+}
+
+.profile_firstName {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.profile_lastName {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.profile_title {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+.description {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-top: 1rem;
+}
+
+.title {
+  color: var(--primary-color);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.item_preTitle {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+.item_title {
+  font-size: 1.6rem;
+  margin: 5px 0;
+}
+
+.item_subtitle {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+.skills_list {
+  margin-left: 2rem;
+  line-height: 2;
+}
+
+.downloadbutton {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.6rem;
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  border-radius: 6px;
+}
+
+.downloadbutton:hover {
+  background: #357abd;
+}
+
+
+.interest_items {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.interest_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+}
+.social_item {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+hr {
+  grid-column: 1 / -1;
+  border: none;
+  border-top: 1px solid #333;
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .profile_container {
+    flex-direction: column;
+  }
+}
